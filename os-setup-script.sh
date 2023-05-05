@@ -15,36 +15,70 @@ brew update
 
 PACKAGES=(
     git
+    julia
+    ffmpeg
+    go
+    languagetool
+    hugo
+    handbrake
     tmux
-    bat
-    macvim
-    mysql
-    fzf
-    ctags
-<...list all the packages you want to install>
-    readline
+    gcc
+    cmake
+    boost
+    boost-mpi
+    hdf5
+    htop
+    mpv
 )
 echo "Installing packages..."
 brew install ${PACKAGES[@]}
 # any additional steps you want to add here
-# link readline
-brew link --force readline
+
 
 echo "Installing cask..."
 CASKS=(
     iterm2
-    adobe-acrobat-reader
-    skype
-    slack
+    mactex
     spotify
-    intellij-idea-ce
+    inkscape
+    gimp
+    vscodium
+    pdf-expert
+    brave-browser
+    google-chrome
+    firefox
+    logseq
+    obsidian
+    zotero
     visual-studio-code
     steam
-    evernote
-    1password
-    macdown
+    prowritingaid
+    scrivener
+    miniconda
+    jupyterlab
+    microsoft-onenote
+    microsoft-remote-desktop
+    surge-synthesizer
+    whatsapp
+    signal
+    libreoffice
+    minecraft
+    rectangle
+    shottr
+    qbittorrent
+    the-unarchiver
+    raspberry-pi-imager
+    zoom
+    anydesk
+    github
+    blender
+    alfred
+    cyberduck
+    kindle
+    musescore
+    mathpix-snipping-tool
 )
 echo "Installing cask apps..."
-brew cask install ${CASKS[@]}
+brew --cask install ${CASKS[@]}
 
 echo "Macbook setup completed!"
