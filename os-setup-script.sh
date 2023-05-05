@@ -38,10 +38,12 @@ brew install ${PACKAGES[@]}
 echo "Installing cask..."
 CASKS=(
     iterm2
+    qview
     mactex
     spotify
     inkscape
     gimp
+    audacity
     vscodium
     pdf-expert
     brave-browser
@@ -51,6 +53,7 @@ CASKS=(
     obsidian
     zotero
     visual-studio-code
+    seafile-client
     steam
     prowritingaid
     scrivener
@@ -77,6 +80,9 @@ CASKS=(
     kindle
     musescore
     mathpix-snipping-tool
+    obs
+    dbeaver-community
+    keycastr
 )
 echo "Installing cask apps..."
 brew --cask install ${CASKS[@]}
