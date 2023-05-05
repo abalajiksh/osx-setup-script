@@ -5,10 +5,8 @@ echo "Starting setup"
 xcode-select —-install
 
 # Check for Homebrew to be present, install if it's missing
-if test ! $(which brew); then
-    echo "Installing homebrew..."
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 
 # Update homebrew recipes
 brew update
